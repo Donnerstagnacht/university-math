@@ -1,5 +1,6 @@
 import numpy as np
 
+#defining two matrizes
 C = np.matrix(
     [
         [1, 1],
@@ -14,15 +15,10 @@ D = np.matrix(
     ]
 )
 
-e=6
-f=4
-g=e+f
-print('e+f=')
-print(g)
-
-h=C+D
+#defining basic matrix operations
+addition=C+D
 print ('matrix addion: ')
-print(h)
+print(addition)
 
 subract=C-D
 print ('matrix subtraction: ')
@@ -35,17 +31,3 @@ print(multiplication)
 invertMatrix=np.linalg.inv(D)
 print ('inverted matrix is: ')
 print(invertMatrix)
-
-A = [
-        [2, 2],
-        [3, 3]
-    ]
-
-B = [
-        [2, 2],
-        [3, 3]
-    ]
-
-print(A)
-print(B)
-print(A+B)
