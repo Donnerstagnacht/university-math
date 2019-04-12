@@ -17,17 +17,22 @@ D = np.matrix(
 
 #defining basic matrix operations
 addition=C+D
-print ('matrix addion: ')
+print('matrix addion: ')
 print(addition)
 
 subract=C-D
-print ('matrix subtraction: ')
+print('matrix subtraction: ')
 print(subract)
 
 multiplication=C*D
-print ('matrix multiplication: ')
+print('matrix multiplication: ')
 print(multiplication)
 
 invertMatrix=np.linalg.inv(D)
-print ('inverted matrix is: ')
+print('inverted matrix is: ')
 print(invertMatrix)
+
+#Determinant of a matrix
+determinant=np.linalg.det(D)
+print('determinant of matrix is: ')
+print(determinant) 
