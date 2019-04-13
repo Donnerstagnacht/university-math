@@ -1,4 +1,5 @@
 from sympy import symbols
+import numpy as np
 
 # Creating symbols to use in equations
 x1, x2, x3 = symbols('x1, x2, x3')
@@ -41,3 +42,13 @@ print(secondDerivationX1X2)
 secondDerivationX2X1 = y.diff(x2, x1)
 print('the second derivation after x2 x1 is: ')
 print(secondDerivationX2X1)
+
+# constructing Hesse Matrix
+hesseMatrix = np.matrix(
+    [
+        [secondDerivationX1X1, secondDerivationX1X2],
+        [secondDerivationX2X1, secondDerivationX2X2]
+    ]
+)
+print('the Hesse Matrix is: ')
+print(hesseMatrix)
